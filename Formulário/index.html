@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Projeto 01: Formulário</title>
+    <link rel="stylesheet" href="./estilo.css">
+  </head>
+  <body>
+    <h1>freeCodeCamp Survey Form</h1>
+    <p>Obrigado por nos ajudar a melhorar a plataforma</p>
+    <main>
+      <form id="form-container" action="index.html" method="post">
+        <div class="mini-container">
+          <label class="label-estilo" for="nome">Nome</label>
+          <input class="caixa-de-texto" id="nome" type="text">
+        </div>
+
+        <div class="mini-container">
+          <label class="label-estilo" for="email">Email</label>
+          <input class="caixa-de-texto" id="email" type="text">
+        </div>
+
+        <div class="mini-container">
+          <label class="label-estilo" for="idade">Idade</label>
+          <input class="caixa-de-texto" id="idade" type="number" min="10" max="99">
+        </div>
+
+        <div class="mini-container">
+          <label class="label-estilo" for="funcao">Qual opção descreve melhor sua função atual?</label>
+          <select class="caixa-de-texto" value="teste">
+            <option>Estudante</option>
+            <option>Trabalho em tempo integral</option>
+            <option>Aluno em tempo integral</option>
+            <option>Prefiro não dizer</option>
+            <option>Outros</option>
+          </select>
+        </div>
+
+        <div class="mini-container">
+            <label class="label-estilo">Você recomendaria freeCodeCamp a um amigo?</label>
+            <br>
+            <input id="recomendacao-sim" name="recomendacao" type="radio">
+            <label class="quebra" for="recomendacao-sim">Com certeza</label>
+            <br>
+            <input id="recomendacao-talvez" name="recomendacao" type="radio">
+            <label class="quebra" for="recomendacao-talvez">Talvez</label>
+            <br>
+            <input id="recomendacao-nao" name="recomendacao" type="radio">
+            <label class="quebra" for="recomendacao-nao">Não tenho certeza</label>
+            <br>
+        </div>
+
+          <div class="mini-container">
+            <label class="label-estilo" >O que você gostaria de ver melhorado? (Marque todas as opções aplicáveis)</label>
+            <br>
+            <input type="checkbox" id="01">
+            <label for="01">Front-end Projects</label>
+            <br>
+            <input type="checkbox" id="02">
+            <label for="02">Back-end Projects</label>
+            <br>
+            <input type="checkbox" id="02">
+            <label for="02">Back-end Projects</label>
+            <br>
+            <input type="checkbox" id="02">
+            <label for="02">Back-end Projects</label>
+            <br>
+            <input type="checkbox" id="03">
+            <label for="03">Data Visualization</label>
+            <br>
+            <input type="checkbox" id="04">
+            <label for="04">Challenges</label>
+            <br>
+            <input type="checkbox" id="05">
+            <label for="05">Open Source Community</label>
+            <br>
+            <input type="checkbox" id="06">
+            <label for="06">Gitter help rooms</label>
+            <br>
+            <input type="checkbox" id="07">
+            <label for="07">Videos</label>
+            <br>
+            <input type="checkbox" id="08">
+            <label for="08">City Meetups</label>
+            <br>
+            <input type="checkbox" id="09">
+            <label for="09">Wiki</label>
+            <br>
+        </div>
+
+        <div class="mini-container">
+          <label class="label-estilo" for="sugestao">Algum comentário ou sugestão?</label>
+          <textarea id="sugestao" rows="8" cols="80" max="80"></textarea>
+        </div>
+
+        <input type="submit" value="Enviar">
+      </form>
+    </main>
+  </body>
+</html>
